@@ -8,18 +8,17 @@ const swaggerUI = require("swagger-ui-express");
 const port = process.env.PORT || 3000
 
 const options ={
-    definition: {
-        openapi: "3.0.3",
+    swaggerDefinition: {
+        openapi: "3.0.0",
     info:{
         title: "RestAPI",
         version: "1.1",
         description: " Testowe API "
     },
-    servers:[
+    servers:
     {
-        servers:["http://localhost:" + port]
+        servers:["https://localhost:" + port]
     }
-    ],
 },
     apis:["./routes/*.js"],
 };
