@@ -76,13 +76,6 @@ router.get("/", async (req, res)=>{
  *  get:
  *      summary: Returns the employee by id
  *      tags: [Employees]
- *      parameters:
- *          - in: path
- *            name: id
- *            schema:
- *              type: string
- *              required: true
- *              description: ID of the employee  
  *      responses:
  *          200:
  *              description: Descriptions of the employee by id
