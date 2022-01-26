@@ -17,7 +17,7 @@ const options ={
     },
     servers:
     {
-        servers:["https://localhost:" + port]
+        servers:"https://localhost:" + port
     }
 },
     apis:["./routes/*.js"],
