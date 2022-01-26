@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000
 
 const options ={
     definition: {
-        openapi: "3.0.0",
+        openapi: "3.0.3",
     info:{
         title: "RestAPI",
         version: "1.1",
