@@ -1,6 +1,6 @@
 Basic API.
 Database powered by mongoDB.
-Enviroment variable: GET, POST, PATCH and DELETE
+
 
 Demo available at:
 https://adriancheba-restapi.herokuapp.com
