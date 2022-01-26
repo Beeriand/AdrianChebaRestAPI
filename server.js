@@ -3,11 +3,9 @@ const app = express();
 const mongoose = require("mongoose");
 const swaggerJSDoc = require("swagger-jsdoc");
 const swaggerUI = require("swagger-ui-express");
+
+
 const port = process.env.PORT || 3000
-mongoose.connect("mongodb+srv://Beeriand:adizaq145236!@Cluster0.qmjsd.mongodb.net/Claster0?retryWrites=true&w=majority", {useNewUrlParser: true});
-const db = mongoose.connection;
-db.on("error", (error)=> console.error(error));
-db.once("open", ()=>console.log("Connected with Database"));
 
 const options ={
     definition: {
@@ -27,6 +25,12 @@ const options ={
 };
 
 const spec = swaggerJSDoc(options);
+
+mongoose.connect("mongodb+srv://Beeriand:adizaq145236!@Cluster0.qmjsd.mongodb.net/Claster0?retryWrites=true&w=majority", {useNewUrlParser: true});
+const db = mongoose.connection;
+db.on("error", (error)=> console.error(error));
+db.once("open", ()=>console.log("Connected with Database"));
+
 
 app.use(express.json());
 
