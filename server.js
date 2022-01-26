@@ -15,10 +15,8 @@ const options ={
         version: "1.1",
         description: " Testowe API "
     },
-    servers:
-    {
+
         servers:["https://localhost:" + port]
-    }
 },
     apis:["./routes/*.js"],
 };
