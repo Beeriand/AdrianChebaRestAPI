@@ -17,7 +17,7 @@ const options ={
     },
     servers:[
     {
-        url: "https://localhost:" + port
+        servers:["http://localhost:3000"]
     }
     ],
 },
